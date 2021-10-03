@@ -1,0 +1,65 @@
+<html>
+<head>
+	<script language=javascript>
+		function student()
+		{
+			f1.t4.value = eval(f1.t1.value)+eval(f1.t2.value)+eval(f1.t3.value)
+			f1.t5.value = eval(f1.t4.value)/3
+			
+			if(f1.t5.value>=70){f1.t6.value="A";}
+			if(f1.t5.value>=50){f1.t6.value="B";}
+			if(f1.t5.value>=35){f1.t6.value="C";}
+			else{f1.t6.value="F";}
+		}
+	</script>
+</head>
+<body bgcolor="#80d0c7">
+<center>
+<br><br><br><br>
+<h1><font color=F9FC08><u><b>Student Form</b></u></font></h1><br><br>
+<form name=f1>
+<table cellspacing=2 cellpadding=10>
+<tr>
+	<td><font color=07004D>Enter Std NO :</font></td>
+	<td><input type=text></td>
+</tr>
+<tr>
+	<td><font color=07004D>Enter Std Name :</font></td>
+	<td><input type=text></td>
+</tr>
+<tr>
+	<td><font color=07004D>Sub 1 marks :</font></td>
+	<td><input type=text name=t1></td>
+</tr>
+<tr>
+	<td><font color=07004D>Sub 2 marks :</font></td>
+	<td><input type=text name=t2></td>
+</tr>
+<tr>
+	<td><font color=07004D>Sub 3 marks :</font></td>
+	<td><input type=text name=t3></td>
+</tr>
+<tr>
+	<td><font color=CD0A18>Total marks :</font></td>
+	<td><input type=text name=t4 disabled=true></td>
+</tr>
+<tr>
+	<td><font color=CD0A18>Avg marks :</font></td>
+	<td><input type=text name=t5 disabled=true></td>
+</tr>
+<tr>
+	<td><font color=CD0A18>Grade :</font></td>
+	<td><input type=text name=t6 disabled=true></td>
+</tr>
+<tr>
+	<td colspan=2 align=center>
+	<input type=button Value=Submit onClick="student()">
+	<input type=reset value=Reset>
+	<a href="link.html"><input type="button" value="Back"></a>
+	</td>
+</tr>
+</table>
+</form>
+</center>
+</body>
+</html>
